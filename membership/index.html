@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>룩세렛ㅣ멤버십</title>
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="룩세렛ㅣ멤버십">
+    <meta property="og:description" content="룩세렛ㅣ멤버십 - 가치에 가치를 더하다">
+    <meta property="og:image" content="https://ifh.cc/g/Xm8bFF.png">
+    <meta property="og:url" content="https://luxeret.com">
+    <meta name="description" content="룩세렛 멤버십 페이지 입니다.">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="luxeret.css" rel="stylesheet" type="text/css"/>
+    <meta name="naver-site-verification" content="483992bf4f969c4ad1b7b46d46bccc6257d5c97b" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/image/apple-touch-icon.png">
+<link rel="icon" type="image/ico" sizes="32x32" href="/assets/image/favicon.ico">
+<link rel="icon" type="image/ico" sizes="16x16" href="/assets/image/favicon.ico">
+<link rel="manifest" href="/assets/image/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="section">
+        <h2>룩세렛 멤버십</h2>
+        
+        <div class="membership-box">
+          <h3>프라임 멤버십</h3>
+          <span class="price">5,900원/월</span>
+          <a href="https://litt.ly/luxeret/sale/7CCrTAN" class="select-button">고르기</a>
+        </div>
+
+
+        <p style="text-align: center; font-size: 15px; color: #aaa; margin-top: 10px;">
+          <a href="https://luxeret-news.notion.site/1914acc108f080e5b279c460a8307a06" style="color: #aaa; text-decoration: none;">혜택이 궁금해요</a>
+        </p>
+        
+
+       <div class="footer">
+        <a href="https://luxeret-news.notion.site/1914acc108f08022af62c2d0d66adfcf?pvs=73">청약철회</a> |
+        <a href="https://luxeret-news.notion.site/1914acc108f080ac9dcfd6541d617a4b?pvs=73">서비스 이용약관</a> |
+        <a href="https://pf.kakao.com/_qxenQG">고객센터</a> |
+        <br> <br>
+        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8026800634">상호명 : 룩세렛</a> |
+        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8026800634">룩세렛 대표이사 : 김태준</a> <br><br>
+        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8026800634">사업자등록번호 : 802-68-00634</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+        
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+
+  .popup {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+
+  .popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  @media (max-width: 768px) {
+    .popup {
+      width: 90%;
+      height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <button class="close-btn" id="closePopup">×</button>
+
+    <a href="https://luxeret.channel.io/home" target="_blank">
+      <img src="https://ifh.cc/g/C3rTM0.jpg" alt="Popup Image">
+    </a>
+  </div>
+</div>
+
+<script>
+
+  window.onload = () => {
+    const popup = document.getElementById('popupOverlay');
+    const closeBtn = document.getElementById('closePopup');
+
+    popup.classList.add('active');
+
+
+    closeBtn.addEventListener('click', () => {
+      popup.classList.remove('active');
+    });
+  };
+
+  document.body.style.overflow = 'hidden';
+document.addEventListener('touchmove', preventScroll, { passive: false });
+
+function preventScroll(e) {
+  e.preventDefault();
+}
+
+</script>
+</body>
+</html>
