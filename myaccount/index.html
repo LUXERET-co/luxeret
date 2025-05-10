@@ -78,20 +78,81 @@
     </div>
 
 
-    <!-- 모바일 전용 헤더 -->
-    <header class="mobile-header">
-        <a href="https://luxeret.com">
-            <img src="https://ifh.cc/g/Zt0p99.png" alt="로고">
-        </a>
-        <div id="Person-Icon">
-            <a href="https://luxeret.com/myaccount">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
-                </svg>
-            </a>
-        </div>
-    </header>
+<!-- 모바일 전용 헤더 -->
+<header class="mobile-header">
+  <a href="https://luxeret.com">
+    <img src="https://ifh.cc/g/Zt0p99.png" alt="로고">
+  </a>
+  <div id="Person-Icon">
+    <a href="https://luxeret.com/myaccount">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 25 25">
+        <path fill="#000000" fill-rule="evenodd" d="M12.125 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m0 1.5a5 5 0 1 0 0-10 5 5 0 0 0 0 10M12.125 15.25c-4.642 0-8.25 3.326-8.25 7.25a.75.75 0 0 1-1.5 0c0-4.913 4.45-8.75 9.75-8.75s9.75 3.837 9.75 8.75a.75.75 0 0 1-1.5 0c0-3.924-3.608-7.25-8.25-7.25" clip-rule="evenodd"></path>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<style>
+  /* 기본적으로 숨김 */
+  .mobile-header {
+    display: none;
+  }
+
+  /* 모바일 전용 (480px 이하) */
+  @media screen and (max-width: 480px) {
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #fff;
+      border-radius: 15px; /* 모서리 둥글게 */
+      width: 100%;
+      max-width: 400px; /* 최대 너비 설정 */
+      position: absolute; /* 부모 컨테이너에서 중앙 정렬 */
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); /* 중앙 정렬 */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 55px;
+      z-index: 1000; /* 다른 요소들 위에 표시 */
+      border-bottom: 1px solid rgb(94, 94, 94);
+    }
+
+    .mobile-header a {
+      display: flex;
+      align-items: center;
+      text-decoration: none; /* 링크 기본 스타일 제거 */
+    }
+
+    .mobile-header img {
+      height: 35px; /* 로고 크기 조정 */
+    }
+
+    /* 아이콘 스타일 */
+    #Person-Icon {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    #Person-Icon svg {
+      width: 30px; /* 아이콘 크기 조정 */
+      height: 30px;
+      fill: #333; /* 기본 색상 */
+      transition: fill 0.2s;
+    }
+
+    #Person-Icon:hover svg {
+      fill: #007bff; /* 호버 시 색 변경 */
+    }
+
+    /* 헤더가 고정되니까 본문이 가려지는 걸 방지 */
+    body {
+      padding-top: 60px;
+    }
+  }
+</style>
 
     <div id="accountManagement">
     <h1 style="margin-bottom: -15px;">계정 관리 <span class="tossface">👤</span></h1>
