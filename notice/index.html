@@ -233,162 +233,54 @@
                 </div>
 
 
-<!-- 푸터 -->
-<div class="footer">
-    
-    <!-- 하단링크 -->
-    <div class="links">
-        <a href="https://docs.luxeret.com/luxeret/policy/privacy">개인정보처리방침</a>
-        <a>|</a>
-        <a href="https://docs.luxeret.com/luxeret/policy/terms">이용약관</a>
-        <a>|</a>
-        <a href="https://docs.luxeret.com/luxeret/policy/email">이메일 무단 수집거부</a>
-        <a>|</a>
-        <a href="https://docs.luxeret.com/luxeret/policy/idea">아이디어 정책</a>
-        <a>|</a>
-        <a href="https://docs.luxeret.com/luxeret/policy/agreement">청소년보호정책</a>
-        <a>|</a>
-        <a href="https://docs.luxeret.com/luxeret/privacy-overseas">개인정보 국외이전 동의</a>
-        <a>|</a>
-        <a href="https://luxeret.com/support/">고객센터</a>
-        <a>|</a>
-        <a href="https://luxeret.com/bugbounty/">버그 바운티</a>
-        <a>|</a>
-        <iframe
-  src="https://info.luxeret.com/badge?theme=dark"
-  width="250"
-  height="30"
-  frameborder="0"
-  scrolling="no"
-  style="color-scheme: normal"
-  class="hide-on-mobile"
-></iframe>
-
-<style>
-  @media (max-width: 767px) {
-    .hide-on-mobile {
-      display: none !important;
-    }
-  }
-</style>
-    </div>
-    <!-- 저작권 -->
-    <div class="copyright">
-        Copyright © 2024-2025 LUXERET. All Rights Reserved.
-    </div>
-
-    <!-- 회사 정보 -->
-    <div class="info-section">
-        <button class="toggle-btn info-btn" onclick="toggleInfo()">회사 정보</button>
-        <div class="info">
-            <p>룩세렛 대표이사 : 김태준</p>
-            <p><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8026800634" style="color: white;">사업자등록번호 : <strong>802-68-00634</strong></a></p>
-            <p>통신판매업 : 2025-인천연수구-0263</p>
-            <p>주소 : 인천타워대로 323, 송도센트로드 C동 2304-B58호</p>
-
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="company-info">
+          <strong>룩세렛</strong><br/>
+          인천타워대로 323, 송도센트로드 C동 2304-B58호<br/>
+          대표이사: 김태준<br/>
+          사업자등록번호 : 802-68-00634<br/>
+          통신판매업 신고 : 2025-인천연수구-0263
         </div>
+      </div>
+
+      <div class="legal-dropdown" onclick="toggleLegalNotice()">
+        약관 및 법적 고지
+        <i id="dropdownIcon" class="fa-solid fa-chevron-down" style="margin-left: 8px;"></i>
+      </div>
+
+      <div class="legal-content" id="legalContent">
+        <a href="https://docs.luxeret.com/luxeret/policy/privacy" target="_blank">개인정보 처리방침</a>
+        <a href="https://docs.luxeret.com/luxeret/policy/terms" target="_blank">서비스 이용약관</a>
+        <a href="https://docs.luxeret.com/luxeret/policy/email" target="_blank">이메일 무단수집 거부</a>
+        <a href="https://docs.luxeret.com/luxeret/policy/idea" target="_blank">아이디어 정책</a>
+        <a href="https://docs.luxeret.com/luxeret/policy/agreement" target="_blank">청소년 보호정책</a>
+        <a href="https://docs.luxeret.com/luxeret/privacy-overseas" target="_blank">개인정보 국외이전 동의</a>
+      </div>
+
+      <div class="footer-bottom">
+       Copyright © 2024-2025 LUXERET. All Rights Reserved.<br/>
+       본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.
+      </div>
     </div>
+  </footer>
 
-    <!-- 패밀리 사이트 -->
-    <div class="family-site">
-        <button class="toggle-btn family-btn" onclick="toggleDropdown()">패밀리 사이트</button>
-        <ul class="family-dropdown">
-            <li><a href="https://webpin.luxeret.com/" target="_blank">웹핀</a></li>
-            <li><a href="https://returns.luxeret.com" target="_blank">리턴</a></li>
-        </ul>
-    </div>
-</div>
-
-
-<script>
-    function toggleInfo() {
-        var info = document.querySelector('.info');
-        var btn = document.querySelector('.info-btn');
-    
-        if (info.style.display === 'none' || info.style.display === '') {
-            info.style.display = 'block';
-            btn.innerHTML = '회사 정보';
-        } else {
-            info.style.display = 'none';
-            btn.innerHTML = '회사 정보';
-        }
-    }
-    
-    function toggleDropdown() {
-        var dropdown = document.querySelector('.family-dropdown');
-        var btn = document.querySelector('.family-btn');
-    
-        if (dropdown.classList.contains('show')) {
-            dropdown.classList.remove('show');
-            btn.innerHTML = '패밀리 사이트';
-        } else {
-            dropdown.classList.add('show');
-            btn.innerHTML = '패밀리 사이트';
-        }
-    }
-    </script>
-
-<div class="settings-container">
-  <button id="settings-btn"><span class="tossface">⚙️</span></button>
-  <div class="theme-menu" id="theme-menu">
-      <p class="menu-title">테마 설정</p>
-      <button class="theme-option" data-theme="light"><span class="tossface">☀️</span>ㅤ라이트 모드</button>
-      <button class="theme-option" data-theme="dark"><span class="tossface">🌙</span> ㅤ다크 모드</button>
-      <button class="theme-option" data-theme="system"><span class="tossface">🖥️</span>ㅤ기기 설정</button>
-      <hr>
-      <p class="menu-title">기타 설정</p>
-      <button id="reset-btn"><span class="tossface">🔄</span>ㅤ초기화</button>
-  </div>
-</div>
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const settingsBtn = document.getElementById("settings-btn");
-  const themeMenu = document.getElementById("theme-menu");
-  const themeOptions = document.querySelectorAll(".theme-option");
-  
-  // 설정 버튼 클릭 시 메뉴 토글
-  settingsBtn.addEventListener("click", () => {
-  themeMenu.style.display = themeMenu.style.display === "block" ? "none" : "block";
-  });
-  
-  // 테마 변경 함수
-  function applyTheme(theme) {
-  if (theme === "light") {
-      document.body.classList.add("light-theme");
-      document.body.classList.remove("dark-theme");
-  } else if (theme === "dark") {
-      document.body.classList.add("dark-theme");
-      document.body.classList.remove("light-theme");
-  } else {
-      // 시스템 테마 적용
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          document.body.classList.add("dark-theme");
-          document.body.classList.remove("light-theme");
-      } else {
-          document.body.classList.add("light-theme");
-          document.body.classList.remove("dark-theme");
-      }
-  }
-  // 로컬 스토리지에 테마 저장
-  localStorage.setItem("theme", theme);
-  }
-  
-  // 테마 버튼 클릭 이벤트
-  themeOptions.forEach(button => {
-  button.addEventListener("click", () => {
-      const selectedTheme = button.getAttribute("data-theme");
-      applyTheme(selectedTheme);
-      themeMenu.style.display = "none";
-  });
-  });
-  
-  // 페이지 로드 시 저장된 테마 적용
-  const savedTheme = localStorage.getItem("theme") || "system";
-  applyTheme(savedTheme);
-  });
-  
-  
+    function toggleLegalNotice() {
+      const content = document.getElementById('legalContent');
+      const icon = document.getElementById('dropdownIcon');
+      const isVisible = content.style.display === 'block';
+
+      content.style.display = isVisible ? 'none' : 'block';
+      icon.classList.toggle('fa-chevron-down', isVisible);
+      icon.classList.toggle('fa-chevron-up', !isVisible);
+    }
   </script>
+</body>
+</html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
             <script>
                 (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
