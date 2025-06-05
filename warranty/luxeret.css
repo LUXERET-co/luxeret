@@ -1,0 +1,185 @@
+ @font-face {
+  font-family: 'NanumSquareNeoBold';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraLight';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+ 
+ @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 280px;
+    max-width: 90vw;
+    box-sizing: border-box;
+  }
+  .custom-popup-bg {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+
+  @media (max-width: 640px) {
+    section {
+      padding: 1.5rem 1rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
+    input#serialInput {
+      font-size: 1rem;
+      padding: 0.75rem 1.25rem;
+    }
+    button[aria-label="보증서번호 조회하기"] {
+      font-size: 1.125rem;
+      padding: 1rem 0;
+    }
+  }
+
+   footer {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 40px 20px 20px;
+}
+
+    .footer-container {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .company-info {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .legal-dropdown {
+      background: #e0e0e0;
+      border-radius: 10px;
+      padding: 12px 16px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      color: #333;
+      transition: background 0.3s;
+    }
+
+    .legal-dropdown:hover {
+      background: #e7e7e7;
+    }
+
+    .legal-content {
+      display: none;
+      font-size: 14px;
+      margin-top: 8px;
+      padding: 15px 20px;
+      background-color: #d6d6d6;
+      border-radius: 10px;
+      color: #333;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    .legal-content a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    .legal-content a:hover {
+      color: #3f3f3f;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 30px;
+      color: #888;
+    }
+
+    @media (min-width: 768px) {
+      .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .company-info {
+        flex: 1;
+      }
+    }
