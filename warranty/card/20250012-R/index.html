@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>룩세렛ㅣ보증서 카드-김세진님</title>
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="룩세렛ㅣ보증서 카드">
+    <meta property="og:description" content="룩세렛ㅣ보증서 카드 - 가치에 가치를 더하다">
+    <meta property="og:image" content="https://ifh.cc/g/Xm8bFF.png">
+    <meta property="og:url" content="https://luxeret.com/notice">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="luxeret.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css" rel="stylesheet" type="text/css" />
+    <style>
+        .tossface {
+          font-family: Tossface;
+          font-size: 1.5rem;
+        }
+      </style>
+    <meta name="naver-site-verification" content="483992bf4f969c4ad1b7b46d46bccc6257d5c97b" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/image/apple-touch-icon.png">
+<link rel="icon" type="image/ico" sizes="32x32" href="/assets/image/favicon.ico">
+<link rel="icon" type="image/ico" sizes="16x16" href="/assets/image/favicon.ico">
+<link rel="manifest" href="/assets/image/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+  </style>
+</head>
+<body class="bg-gradient-to-tr from-[#5dbcea] via-[#48a6d9] to-[#338fca] flex items-center justify-center min-h-screen p-6 font-sans">
+
+  <div class="perspective">
+    <div id="card" class="preserve-3d relative w-80 h-[320px] rounded-3xl shadow-2xl cursor-pointer select-none bg-gradient-to-br from-white/90 via-white/80 to-white/70 overflow-hidden">
+
+
+      <div class="plastic-shine"></div>
+
+      <div class="absolute w-full h-full rounded-3xl bg-transparent p-6 flex flex-col justify-center gap-6 text-gray-900 backface-hidden" style="transform: rotateY(0deg);">
+        <h2 class="text-2xl font-extrabold tracking-wide text-center drop-shadow-sm">리턴 제품보증서</h2>
+        <div class="flex flex-col gap-3 text-base font-semibold px-1">
+          <div class="flex justify-between">
+            <span class="opacity-90">성함</span><span>김세진</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="opacity-90">가격</span><span>₩11,000</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="opacity-90">구매일시</span><span>2024.11.28</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="opacity-90">보증번호</span><span id="serial">20250012-R</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="opacity-90">발급일</span><span>2025-06-08</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="absolute w-full h-full rounded-3xl bg-white/90 p-6 flex flex-col justify-center items-center text-gray-900 backface-hidden" style="transform: rotateY(180deg) scaleX(-1);">
+      </div>
+
+    </div>
+    <p class="mt-6 text-white text-center select-none text-sm">
+      카드를 클릭하여 보증번호 복사
+    </p>
+
+    <div id="toast" class="mt-2 text-white bg-black/80 rounded-xl px-4 py-2 text-sm opacity-0 transition-opacity duration-500 text-center">
+      보증번호가 복사되었습니다
+    </div>
+  <script>
+    const card = document.getElementById('card');
+    const serial = document.getElementById('serial');
+    const toast = document.getElementById('toast');
+
+    card.addEventListener('click', () => {
+      card.classList.toggle('is-flipped');
+
+      const textToCopy = serial.textContent;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        toast.classList.remove('opacity-0');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0');
+        }, 2000);
+      });
+    });
+  </script>
+
+</body>
+</html>
