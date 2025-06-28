@@ -218,7 +218,7 @@ footer {
   z-index: -1;
   border-radius: 20px;
   transform-origin: center center;
-  filter: blur(4px);
+  filter: blur(5px);
 }
 
 .banner-text {
