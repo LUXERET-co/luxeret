@@ -564,6 +564,31 @@ input[type="checkbox"] {
 }
 
 
+#badge {
+  margin-bottom: 20px; /* 원하는 간격으로 조절 가능 */
+}
+
+#badge {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+    border: 2px solid #cccccc;
+  
+}
+
+#badge h2 {
+  font-size: 1.3rem;
+  color: rgb(226, 226, 226)000;
+  margin-bottom: 10px;
+}
+
+#badge {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
 
 .company-info {
   background-color: #191f28;
